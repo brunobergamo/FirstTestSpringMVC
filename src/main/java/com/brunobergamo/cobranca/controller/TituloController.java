@@ -43,4 +43,13 @@ public class TituloController {
 		modelAndView.addObject("mensagem", "Título salvo com sucesso");
 		return modelAndView;
 	}
+
+	@RequestMapping
+	public ModelAndView pesquisar()
+	{
+		ModelAndView modelAndView = new ModelAndView("PesquisaTitulos");
+		List<Titulo> findAll = titulos.findAll();
+		modelAndView.addObject("titulos", findAll);
+		return modelAndView;
+	}
 }

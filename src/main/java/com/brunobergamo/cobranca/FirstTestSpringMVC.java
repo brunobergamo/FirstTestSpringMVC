@@ -9,10 +9,10 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.i18n.FixedLocaleResolver;
 
 @SpringBootApplication
-public class CobrancaApplication {
+public class FirstTestSpringMVC {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CobrancaApplication.class, args);
+		SpringApplication.run(FirstTestSpringMVC.class, args);
 	}
 	
 	@Bean
